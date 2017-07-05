@@ -78,6 +78,7 @@
     self.inputMessageBarView.contentView.textView.placeHolder = [NSBundle zhc_localizedStringForKey:@"new_message"];
     self.inputMessageBarView.contentView.textView.accessibilityLabel = [NSBundle zhc_localizedStringForKey:@"new_message"];
     self.inputMessageBarView.contentView.textView.delegate = self;
+    self.inputMessageBarView.contentView.leftBarButtonItem = nil;
     self.automaticallyScrollsToMostRecentMessage = YES;
     
     self.incomingCellIdentifier = [ZHCMessagesTableViewCellIncoming cellReuseIdentifier];
